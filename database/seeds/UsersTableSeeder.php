@@ -16,8 +16,8 @@ class UsersTableSeeder extends Seeder
         User::truncate();
 
         User::create([
-        	'name' => 'alan',
-        	'password' => bcrypt('sosa'),
+        	'name' => 'jorge',
+        	'password' => bcrypt('joyGames!'),
         	'nombres' => 'Alan Mauricio',
         	'apellidos' => 'Sosa Garcia',
         	'email' => 'alan.sosa.g@hotmail.com',
@@ -26,8 +26,8 @@ class UsersTableSeeder extends Seeder
         ]);
 
         User::create([
-        	'name' => 'paco',
-        	'password' => bcrypt('rangel'),
+        	'name' => 'alan',
+        	'password' => bcrypt('sosa'),
         	'nombres' => 'Francisco',
         	'apellidos' => 'Rangel',
         	'email' => 'expomueblesrangel@hotmail.com',
@@ -36,33 +36,13 @@ class UsersTableSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'agustin',
-            'password' => bcrypt('agustinrocio'),
+            'name' => 'lupita',
+            'password' => bcrypt('lupit4!'),
             'nombres' => 'Agusting',
             'apellidos' => 'Hernandez',
             'email' => 'centromueblerocastañon@hotmail.com',
             'type' => 2,
             'device' => 'Generated',
-        ]);
-
-        User::create([
-            'name' => 'hugo',
-            'password' => bcrypt('hugo'),
-            'nombres' => 'Hugo',
-            'apellidos' => 'Rangel',
-            'email' => 'expomueblesrangel@hotmail.com',
-            'type' => 2,
-            'device' => 'Generated',
-        ]);
-
-        User::create([
-        	'name' => 'vendedor',
-        	'password' => bcrypt('testing'),
-        	'nombres' => 'Nombre del vendedor',
-        	'apellidos' => 'Apellidos',
-        	'email' => 'sin email',
-        	'type' => 3,
-        	'device' => 'Generated'
         ]);
     }
 }
