@@ -15,8 +15,8 @@ class AdminTableSeeder extends Seeder
         Admin::truncate();
 
         Admin::create([
-        	'name' => 'daysi',
-        	'password' => bcrypt('virruet4!'),
+        	'name' => 'jorge',
+        	'password' => bcrypt('joyGames!'),
         	'email' => 'admin@email.com',
         	'device' => 'Generado',
         	'type' => 1,
@@ -24,11 +24,20 @@ class AdminTableSeeder extends Seeder
         ]);
 
         Admin::create([
-        	'name' => 'ramon',
-        	'password' => bcrypt('ramon'),
+        	'name' => 'alan',
+        	'password' => bcrypt('sosa'),
         	'email' => 'manager@email.com',
         	'device' => 'Generado',
-        	'type' => 2,
+        	'type' => 1,
+        	'situacion' => 'Activo'
+        ]);
+
+        Admin::create([
+        	'name' => 'lupita',
+        	'password' => bcrypt('lupit4!'),
+        	'email' => 'manager@email.com',
+        	'device' => 'Generado',
+        	'type' => 1,
         	'situacion' => 'Activo'
         ]);
 
