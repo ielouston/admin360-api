@@ -1,0 +1,262 @@
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.stick-bt {
+	position: absolute !important;
+	bottom: 0;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+.dv{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.dv-header{
+	display: flex;
+	justify-content: space-between;
+	background : #fff;
+	border-bottom : 1px solid #eee;
+	padding: 0.5em;
+	&-title{
+		flex: 1;
+	}
+	&-search{
+		flex: 2;
+		display: flex;
+		justify-content: space-between;
+
+		&-input{
+			flex: 1;
+		}
+		&-btn{
+			flex: 1;
+		}
+
+	}
+	&-filters{
+		flex : 2;
+		display: flex;
+		justify-content: space-between;
+		padding-right: 5px;
+		&-columns{
+			flex:2;
+			display: flex;
+			justify-content: space-between;
+		}
+		&-types{
+			flex:2;
+			display: flex;
+			justify-content: space-between;
+		}
+		&-operators{
+			flex:1;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	
+	&-button{
+		flex: 1;
+	}
+}
+.dv-body{
+	flex: 1;
+	&-table{
+	width: 100%;
+		thead{
+			th{
+				padding: 5px 10px;
+			}
+		}
+		tbody{
+			td{
+				padding: 5px 10px;
+			}
+		}
+	}
+}
+.dv-footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+.dv-footer-item{
+	display: flex;
+	justify-content: space-between;
+
+}
+.dv-footer-sub{
+	padding: 0 0.5em;
+	&-input{
+		width: 40px;
+		text-align: center;
+	}
+}
+.link{
+	cursor: pointer;
+	&-modal{
+		padding: 1em;
+	}
+	&-pressed{
+		background: #e4e4e4;	
+	}
+}
+.link:hover{
+	background: #e4e4e4;
+}
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+  overflow-y: scroll;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 35em;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+// .mov{
+// 	display: flex;
+// 	width: 100%;
+// 	padding: 1em;
+// 	border-top: 1px solid #e4e4e4;
+
+// 	&-nombre{
+// 		flex: 1;
+// 	}
+// 	&-nota{
+// 		flex: 1;
+// 	}
+// 	&-entradas{
+// 		flex: 1;
+// 	}
+// 	&-saldo{
+// 		flex: 1;
+// 	}
+// 	&-cliente{
+// 		flex: 3;
+// 	}
+// 	&-existAnt{
+// 		flex: 1;
+// 	}
+// 	&-existAct{
+// 		flex: 1;
+// 	}
+// 	&-dates{
+// 		flex: 2;
+// 	}
+// }
+.micro-block{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 40em;
+	padding: 1em;
+	background: #f5f5f5;
+}
+.border-simple{
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+}
+.avatar{
+	display: block;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 6px solid white;
+	box-shadow: 0px 0px 3px 1px #e4e4e4;
+	background-size: cover;
+	background-position: center center;
+	cursor: pointer;
+	
+	&-full{
+		width: 80% !important;
+		height: 80% !important;
+		box-shadow: none;
+
+		img{
+			display: block;
+			position: relative;
+			max-width: 100% !important;
+			max-height: 50vw !important;
+			margin: 0 auto;
+		}
+	}
+}
+.responsive{
+	&-width{
+		width: calc(100% - 3em) !important;
+	}
+	&-height{
+		height: calc(100% - 3em) !important;
+	}
+}
